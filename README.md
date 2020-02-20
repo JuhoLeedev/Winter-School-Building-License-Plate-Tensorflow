@@ -39,11 +39,11 @@ Check all the checkbox and click install.
 
 After installing Anaconda, you should install CUDA and cuDNN. To use CUDA, you must have a NVIDIA graphics card that supports CUDA. You can check that your graphics card supports CUDA or not at [here](https://www.geforce.com/hardware/technology/cuda/supported-gpus?field_gpu_type_value=all). If you don't have CUDA supported graphics card, you have to use TensorFlow-CPU only. Then you can skip this step.  
   
-If you checked your graphics card supports CUDA, now you should install CUDA 10.1 version. Make sure that you installed 10.1 version instead 10.2 version(latest version). At the time of this writing TensorFlow do not support 10.2 CUDA. Check the version of CUDA that TensorFlow supports. You can get CUDA 10.1 [here](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal).  
+If you checked your graphics card supports CUDA, now you should install CUDA 10.1 version. Make sure that you installed 10.1 version instead 10.2 version(latest version). At the time of this writing TensorFlow do not support 10.2 CUDA. Check the version of CUDA that TensorFlow supports. You can get [CUDA 10.1 here](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal).  
 I recommend you to download local version. Network version may fail during installation. If you have failed during install, it 
 might have conflicted with graphics driver. If you failed, remove your graphics driver and try again.  
   
-After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-archive). To get cuDNN, you have to join NVIDIA membership. You can download cuDNN after sign in the site. Download cuDNN and extract it to your CUDA installed path. If you installed CUDA at default path, it would be here "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1".
+After installing CUDA, get [cuDNN here](https://developer.nvidia.com/rdp/cudnn-archive). To get cuDNN, you have to join NVIDIA membership. You can download cuDNN after sign in the site. Download cuDNN and extract it to your CUDA installed path. If you installed CUDA at default path, it would be here "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1".
 <br><br>
 
 ### 2. Install TensorFlow and Anaconda environment
@@ -54,8 +54,12 @@ Next, update all installed Python packages.
 <pre><code>>conda update --all</code></pre>
 Now, install TensorFlow-gpu 1.15 by this command.
 <pre><code>>pip install tensorflow-gpu==1.15</code></pre>
-If you don't have a graphics card or didn't installed CUDA, install TensorFlow-cpu only version.
+If you don't have a graphics card or didn't install CUDA, install TensorFlow-cpu only version.
 <pre><code>>pip install tensorflow==1.15</code></pre>
 After install now you are ready to use tensorflow!
   
 #### 2a. Download TensorFlow Object Detection API repository from GitHub
+
+Create a folder directly in C: and name it “tensorflow1”. This working directory will contain the full TensorFlow object detection framework, as well as your training images, training data, trained classifier, configuration files, and everything else needed for the object detection classifier.  
+  
+Download the full TensorFlow object detection repository located at https://github.com/tensorflow/models by clicking the “Clone or Download” button and downloading the zip file. Open the downloaded zip file and extract the “models-master” folder directly into the C:\tensorflow1 directory you just created. Rename “models-master” to just “models”.

@@ -25,4 +25,4 @@ You could use only cpu to train the model but it would take much longer times. I
   
 ## Steps
 ### 1. Install Anaconda, CUDA, and cuDNN
-
+First, you should install Anaconda. You can get [here](https://www.anaconda.com/distribution/). Click Python 3.7 version download and run the exe.

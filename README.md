@@ -8,6 +8,8 @@ This repository only covers creating models that recognize building plates using
 <br>
 This readme describes every steps required to get going with obect detection classifier.<br>
 It also describes how to replace the files with your own files to train a detection classifier for whatever you want. It also has Python scripts to test your classifier out on an image, video, or webcam feed.<br>
+<br>
 This project is inspired by "[How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU) on Windows 10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-install-anaconda-cuda-and-cudnn)"<br>
 <br>
 
+##Introduction

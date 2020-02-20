@@ -1,6 +1,6 @@
 # Detecting Building license plate using TensorFlow Object Detection
 ## Brief Summary
-***last updated: 20/02/2020 with Tensorflow v1.15***  
+***last updated: 21/02/2020 with Tensorflow v1.15***  
   
 This repertory is a deep learning project that creates models that recognize building license plates as part of Inha University's Winter School project. This project ran on Windows, and all configuration is Windows based. Participants in this project are Lee Ju-ho and Park Ki-soo.  
   
@@ -47,7 +47,12 @@ After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-a
   
 ### 2. Install TensorFlow and Anaconda environment
 
-After step 1, now install tensorflow-gpu and conda packages. Run the Anaconda Prompt and update conda first.  
+After step 1, now yout should install tensorflow-gpu and conda packages. Run the Anaconda Prompt and update conda first.  
 <pre><code>>conda update -n base conda</code></pre>
 Next, update all installed Python packages.
 <pre><code>>conda update --all</code></pre>
+Now, install TensorFlow-gpu 1.15 by this command.
+<pre><code>>pip install tensorflow-gpu==1.15</code></pre>
+After install now you are ready to use tensorflow!
+  
+#### 2a. Download TensorFlow Object Detection API repository from GitHub

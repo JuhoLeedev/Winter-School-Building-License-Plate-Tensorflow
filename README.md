@@ -43,3 +43,5 @@ I recommend you to download local version. Network version may fail during insta
 might have conflicted with graphics driver. If you failed, remove your graphics driver and try again.  
   
 After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-archive). To get cuDNN, you have to join NVIDIA membership. You can download cuDNN after sign in the site. Download cuDNN and extract it to your CUDA installed path. If you installed CUDA at default path, it would be here "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1".
+  
+### 2. Install TensorFlow and Anaconda environment

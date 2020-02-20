@@ -42,4 +42,4 @@ If you checked your graphics card supports CUDA, now you should install CUDA 10.
 I recommend you to download local version. Network version may fail during installation. If you have failed during install, it 
 might have conflicted with graphics driver. If you failed install, remove your graphics driver and try again.  
   
-After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-archive). 
+After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-archive). To get cuDNN, you have to join NVIDIA membership. You cand download cuDNN after sign in the site. Download cuDNN and extract it to your CUDA installed path. If you installed CUDA at default path, it would be here "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1".

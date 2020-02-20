@@ -40,4 +40,6 @@ After installing Anaconda, you should install CUDA and cuDNN. To use CUDA, you m
   
 If you checked your graphics card supports CUDA, now you should install CUDA 10.1 version. Make sure that you installed 10.1 version instead 10.2 version(latest version). At the time of this writing TensorFlow do not support 10.2 CUDA. Check the version of CUDA that TensorFlow supports. You can get CUDA 10.1 [here](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal).  
 I recommend you to download local version. Network version may fail during installation. If you have failed during install, it 
-might have conflicted with graphics driver. If you failed install, remove your graphic driver and try again.  
+might have conflicted with graphics driver. If you failed install, remove your graphics driver and try again.  
+  
+After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-archive). 

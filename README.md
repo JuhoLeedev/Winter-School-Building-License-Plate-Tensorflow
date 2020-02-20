@@ -26,7 +26,7 @@ You could use only cpu to train the model but it would take much longer times. I
 ## Steps
 ### 1. Install Anaconda, CUDA, and cuDNN
 
-First, you should install Anaconda. You can get [here](https://www.anaconda.com/distribution/). Click Python 3.7 version download and run the exe.  
+First, you should install Anaconda. You can get [Anaconda here](https://www.anaconda.com/distribution/). Click Python 3.7 version download and run the exe.  
   
 Set the file path to install, and click next.  
   
@@ -56,7 +56,7 @@ Now, install TensorFlow-gpu 1.15 by this command.
 <pre><code>>pip install tensorflow-gpu==1.15</code></pre>
 If you don't have a graphics card or didn't install CUDA, install TensorFlow-cpu only version.
 <pre><code>>pip install tensorflow==1.15</code></pre>
-After install now you are ready to use tensorflow!
+After install now you are ready to use TensorFlow!
   
 #### 2a. Download TensorFlow Object Detection API repository from GitHub
 

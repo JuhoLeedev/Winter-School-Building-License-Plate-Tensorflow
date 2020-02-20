@@ -24,4 +24,5 @@ We will use TensorFlow-GPU v1.15. TensorFlow-GPU allows your PC to use the video
 You could use only cpu to train the model but it would take much longer times. If you use CPU-only TensorFlow, you don't need to install CUDA and cuDNN in Step 1.  
   
 ## Steps
-1. Install Anaconda, CUDA, and cuDNN  
+### 1. Install Anaconda, CUDA, and cuDNN
+

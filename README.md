@@ -16,8 +16,7 @@ This project is inspired by "[How To Train an Object Detection Classifier for Mu
 
 The purpose of this project is to create a tensorflow model that can detects building license plate from the image, to make an application that automatically recognizes addresses when photos are taken.  
   
-The reason why we need to train a model that recognizes a license plate is that in general, when a picture is taken, it most likely contains other letters besides the license plate.  
-So we should recognize the license plate first, and then recognize the letters.  
+The reason why we need to train a model that recognizes a license plate is that in general, when a picture is taken, it most likely contains other letters besides the license plate. So we should recognize the license plate first, and then recognize the letters.  
 In this progress, we will create a model that recognizes building license plates using TensorFlow Object Detection api.  
   
 We will use TensorFlow-GPU v1.15. TensorFlow-GPU allows your PC to use the video card to provide extra processing power while training.  

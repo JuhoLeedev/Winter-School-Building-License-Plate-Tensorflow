@@ -44,7 +44,8 @@ I recommend you to download local version. Network version may fail during insta
 might have conflicted with graphics driver. If you failed, remove your graphics driver and try again.  
   
 After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-archive). To get cuDNN, you have to join NVIDIA membership. You can download cuDNN after sign in the site. Download cuDNN and extract it to your CUDA installed path. If you installed CUDA at default path, it would be here "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1".
-  
+<br>
+
 ### 2. Install TensorFlow and Anaconda environment
 
 After step 1, now you should install tensorflow-gpu and conda packages. Run the Anaconda Prompt and update conda first.  
@@ -53,6 +54,8 @@ Next, update all installed Python packages.
 <pre><code>>conda update --all</code></pre>
 Now, install TensorFlow-gpu 1.15 by this command.
 <pre><code>>pip install tensorflow-gpu==1.15</code></pre>
+If you don't have a graphics card or didn't installed CUDA, install TensorFlow-cpu only version.
+<pre><code>>pip install tensorflow==1.15</code></pre>
 After install now you are ready to use tensorflow!
   
 #### 2a. Download TensorFlow Object Detection API repository from GitHub

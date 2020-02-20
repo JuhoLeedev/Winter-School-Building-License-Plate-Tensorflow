@@ -25,6 +25,7 @@ You could use only cpu to train the model but it would take much longer times. I
   
 ## Steps
 ### 1. Install Anaconda, CUDA, and cuDNN
+
 First, you should install Anaconda. You can get [here](https://www.anaconda.com/distribution/). Click Python 3.7 version download and run the exe.  
   
 Set the file path to install, and click next.  
@@ -45,3 +46,8 @@ might have conflicted with graphics driver. If you failed, remove your graphics 
 After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-archive). To get cuDNN, you have to join NVIDIA membership. You can download cuDNN after sign in the site. Download cuDNN and extract it to your CUDA installed path. If you installed CUDA at default path, it would be here "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1".
   
 ### 2. Install TensorFlow and Anaconda environment
+
+After step 1, now install tensorflow-gpu and conda packages. Run the Anaconda Prompt and update conda first.  
+  >conda update -n base conda
+Next, update all installed Python packages.
+  >conda update --all

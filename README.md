@@ -34,7 +34,7 @@ Set the file path to install, and click next.
 Check all the checkbox and click install.  
   
 ![image3](./docs/image3.png)  
-<br><br>
+<br>
 
 After installing Anaconda, you should install CUDA and cuDNN. To use CUDA, you must have an NVIDIA graphics card that supports CUDA. You can check that your graphics card supports CUDA or not at [here](https://www.geforce.com/hardware/technology/cuda/supported-gpus?field_gpu_type_value=all). If you don't have CUDA supported graphics card, you have to use TensorFlow-CPU only. Then you can skip this step.  
   

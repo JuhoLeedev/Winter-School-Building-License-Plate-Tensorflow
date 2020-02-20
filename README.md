@@ -48,6 +48,6 @@ After installing CUDA, get cuDNN [here](https://developer.nvidia.com/rdp/cudnn-a
 ### 2. Install TensorFlow and Anaconda environment
 
 After step 1, now install tensorflow-gpu and conda packages. Run the Anaconda Prompt and update conda first.  
-'''>conda update -n base conda'''
+<pre><code>>conda update -n base conda</code></pre>
 Next, update all installed Python packages.
-'''>conda update --all'''
+<pre><code>>conda update --all</code></pre>

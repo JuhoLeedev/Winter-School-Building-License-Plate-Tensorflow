@@ -80,8 +80,7 @@ Download the full repository located on this page (scroll to the top and click C
   
 At this point, your \object_detection folder should look like this image:  
   
-![image4](./docs/image4.jpg)  
-*I get this image from [How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU) on Windows 10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-install-anaconda-cuda-and-cudnn) so the test and test1 image file would not be in your \object_detection folder*  
+![image4](./docs/image4.png)  
   
 
   

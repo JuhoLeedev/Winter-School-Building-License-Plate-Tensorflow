@@ -104,7 +104,7 @@ Then, install opencv-python by this command.
 #### 2e. Configure PYTHONPATH environment variable
 
 A PYTHONPATH variable must be created that points to the \models, \models\research, and \models\research\slim directories. Do this by issuing the following commands. (from any directory)
-<pre><code>>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></pre>
+<pre><code>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></pre>
 *Note : Every time Anaconda prompt is exited, the PYTHONPATH variable is reset and needs to be set up again. You can use "echo %PYTHONPATH% to see if it has been set or not.*  
   
 #### 2f. Compile Protobufs and run setup.py
@@ -117,4 +117,18 @@ This creates a name_pb2.py file from every name.proto file in the \object_detect
   
 Finally, run the following commands from the C:\tensorflow1\models\research directory:
 <pre><code>python setup.py build  
-python setup.py install</code></pre>  
+python setup.py install</code></pre>
+The TensorFlow Object Detection API is now all set up to use pre-trained models for object detection, or to train a new one. Now you can try my trained building license plate detector. To try this, go to \object_detector folder and type
+<pre><code>idle</code></pre>
+and click file -> open and select Object_detection_image.py and open it. Now change the image path that you want to test in this code.
+<pre><code># Load the Tensorflow model into memory.
+detection_graph = tf.Graph()
+with detection_graph.as_default():
+    od_graph_def = tf.GraphDef()
+    with tf.gfile.GFile(**PATH_TO_CKPT**, 'rb') as fid:
+        serialized_graph = fid.read()
+        od_graph_def.ParseFromString(serialized_graph)
+        tf.import_graph_def(od_graph_def, name='')
+
+    sess = tf.Session(graph=detection_graph)</code></pre>
+### 3. Gather and Label Pictures.

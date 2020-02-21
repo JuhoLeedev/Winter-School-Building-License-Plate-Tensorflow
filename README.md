@@ -123,6 +123,6 @@ The TensorFlow Object Detection API is now all set up to use pre-trained models 
 At the Python Shell, click File -> Open and select Object_detection_image.py and open it. Now change the image name that you want to test in this code.
 <pre><code># Name of the directory containing the object detection module we're using
 MODEL_NAME = 'inference_graph'
-IMAGE_NAME = 'test1.jpg'    //change here</code></pre>  
+IMAGE_NAME = 'test1.jpg'    # change here</code></pre>  
   
 ### 3. Gather and Label Pictures.

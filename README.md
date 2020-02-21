@@ -120,15 +120,9 @@ Finally, run the following commands from the C:\tensorflow1\models\research dire
 python setup.py install</code></pre>
 The TensorFlow Object Detection API is now all set up to use pre-trained models for object detection, or to train a new one. Now you can try my trained building license plate detector. To try this, go to \object_detector folder and type
 <pre><code>idle</code></pre>
-and click file -> open and select Object_detection_image.py and open it. Now change the image path that you want to test in this code.
-<pre><code># Load the Tensorflow model into memory.
-detection_graph = tf.Graph()
-with detection_graph.as_default():
-    od_graph_def = tf.GraphDef()
-    with tf.gfile.GFile(**PATH_TO_CKPT**, 'rb') as fid:
-        serialized_graph = fid.read()
-        od_graph_def.ParseFromString(serialized_graph)
-        tf.import_graph_def(od_graph_def, name='')
-
-    sess = tf.Session(graph=detection_graph)</code></pre>
+At the Python Shell, click File -> Open and select Object_detection_image.py and open it. Now change the image name that you want to test in this code.
+<pre><code># Name of the directory containing the object detection module we're using
+MODEL_NAME = 'inference_graph'
+IMAGE_NAME = 'test1.jpg' // change here</code></pre>  
+  
 ### 3. Gather and Label Pictures.

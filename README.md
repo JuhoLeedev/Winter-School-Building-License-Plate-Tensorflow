@@ -94,3 +94,14 @@ After delete all these files you can use your own images to train whatever you w
   
 #### 2d. Set up Anaconda environment for Object Detection API  
 
+We have updated Anaconda environment at the beginning of step 2. It has no problem using TensorFlow only. But to use Object Detection API you need to do some more settings.  
+  
+Frist, open Anaconda promt and type this command to install protobuf package.
+<pre><code>>conda install -c anaconda protobuf</code></pre>
+Then, install opencv-python by this command.
+<pre><code>>pip install opencv-python</code></pre>
+
+#### 2e. Configure PYTHONPATH environment variable
+
+A PYTHONPATH variable must be created that points to the \models, \models\research, and \models\research\slim directories. Do this by issuing the following commands (from any directory):
+<pre><code>>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></pre>

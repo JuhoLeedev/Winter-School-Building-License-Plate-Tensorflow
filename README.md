@@ -105,7 +105,7 @@ Then, install opencv-python by this command.
 
 A PYTHONPATH variable must be created that points to the \models, \models\research, and \models\research\slim directories. Do this by issuing the following commands (from any directory):
 <pre><code>>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></pre>
-*Note: Every time Anaconda prompt is exited, the PYTHONPATH variable is reset and needs to be set up again. You can use "echo %PYTHONPATH% to see if it has been set or not.*  
+*Note : Every time Anaconda prompt is exited, the PYTHONPATH variable is reset and needs to be set up again. You can use "echo %PYTHONPATH% to see if it has been set or not.*  
   
 #### 2f. Compile Protobufs and run setup.py
 

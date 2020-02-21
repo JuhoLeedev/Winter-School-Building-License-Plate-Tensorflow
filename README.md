@@ -82,6 +82,3 @@ At this point, your \object_detection folder should look like this image:
   
 ![image4](./docs/image4.png)  
   
-
-  
-

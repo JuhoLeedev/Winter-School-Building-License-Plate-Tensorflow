@@ -46,7 +46,7 @@ might have conflicted with graphics driver. If you failed, remove your graphics 
 After installing CUDA, get [cuDNN here](https://developer.nvidia.com/rdp/cudnn-archive). To get cuDNN, you have to join NVIDIA membership. You can download cuDNN after sign in the site. Download cuDNN and extract it to your CUDA installed path. If you installed CUDA at default path, it would be here "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1".
 <br><br>
 
-### 2. Install TensorFlow and Anaconda environment
+### 2. Install TensorFlow and update Anaconda environment
 
 After step 1, now you should install tensorflow-gpu and conda packages. Run the Anaconda Prompt and update conda first.  
 <pre><code>>conda update -n base conda</code></pre>
@@ -85,3 +85,8 @@ At this point, your \object_detection folder should look like this image:
 This repository contains all images to train building license plate and .csv files and already trained models too. You can test my trained building license detector after step 2 is all completed by running Object_detection_image.py script. You can ignore the \doc folder and its files; they are just there to hold the images used for this readme.  
   
 If you want to train your own object detector, delete the following files (do not delete the folders):
++All files in \object_detection\images\train and \object_detection\images\test  
++The “test_labels.csv” and “train_labels.csv” files in \object_detection\images
++All files in \object_detection\training
++All files in \object_detection\inference_graph  
+  

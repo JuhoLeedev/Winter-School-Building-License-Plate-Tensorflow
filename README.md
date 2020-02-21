@@ -49,13 +49,13 @@ After installing CUDA, get [cuDNN here](https://developer.nvidia.com/rdp/cudnn-a
 ### 2. Install TensorFlow and update Anaconda environment
 
 After step 1, now you should install tensorflow-gpu and conda packages. From the Start menu in Windows, search for the Anaconda Prompt utility, right click on it, and click “Run as Administrator”. If Windows asks you if you would like to allow it to make changes to your computer, click Yes. And update conda by this command.
-<pre><code>>conda update -n base conda</code></pre>
+<pre><code>conda update -n base conda</code></pre>
 Next, update all installed Python packages.
-<pre><code>>conda update --all</code></pre>
+<pre><code>conda update --all</code></pre>
 Now, install TensorFlow-gpu 1.15 by this command.
-<pre><code>>pip install tensorflow-gpu==1.15</code></pre>
+<pre><code>pip install tensorflow-gpu==1.15</code></pre>
 If you don't have a graphics card or didn't install CUDA, install TensorFlow-cpu only version.
-<pre><code>>pip install tensorflow==1.15</code></pre>
+<pre><code>pip install tensorflow==1.15</code></pre>
 After install now you are ready to use TensorFlow!
   
 #### 2a. Download TensorFlow Object Detection API repository from GitHub
@@ -97,9 +97,9 @@ After delete all these files you can use your own images to train whatever you w
 We have updated Anaconda environment at the beginning of step 2. It has no problem using TensorFlow only. But to use Object Detection API you need to do some more settings.  
   
 Frist, run Anaconda promt as Adminitrator and type this command to install protobuf package.
-<pre><code>>conda install -c anaconda protobuf</code></pre>
+<pre><code>conda install -c anaconda protobuf</code></pre>
 Then, install opencv-python by this command.
-<pre><code>>pip install opencv-python</code></pre>
+<pre><code>pip install opencv-python</code></pre>
 
 #### 2e. Configure PYTHONPATH environment variable
 
@@ -110,11 +110,11 @@ A PYTHONPATH variable must be created that points to the \models, \models\resear
 #### 2f. Compile Protobufs and run setup.py
 
 Next, compile the Protobuf files, which are used by TensorFlow to configure model and training parameters. In the Anaconda Command Prompt, change directories to the \models\research directory.
-<pre><code>>cd C:\tensorflow1\models\research</code></pre>
+<pre><code>cd C:\tensorflow1\models\research</code></pre>
 Then copy and paste the following command into the command line and press Enter.
 <pre><code>protoc object_detection/protos/*.proto --python_out=.</code></pre>
 This creates a name_pb2.py file from every name.proto file in the \object_detection\protos folder.  
   
 Finally, run the following commands from the C:\tensorflow1\models\research directory:
 <pre><code>python setup.py build  
->python setup.py install</code></pre>  
+python setup.py install</code></pre>  

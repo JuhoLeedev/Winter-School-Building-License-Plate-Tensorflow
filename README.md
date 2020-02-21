@@ -105,7 +105,7 @@ Then, install opencv-python by this command.
 
 A PYTHONPATH variable must be created that points to the \models, \models\research, and \models\research\slim directories. Do this by issuing the following commands. (from any directory)
 <pre><code>set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim</code></pre>
-*Note : Every time Anaconda prompt is exited, the PYTHONPATH variable is reset and needs to be set up again. You can use "echo %PYTHONPATH% to see if it has been set or not.*  
+*Note : Every time Anaconda prompt is exited, the PYTHONPATH variable might be reset and needs to be set up again. You can use "echo %PYTHONPATH% to see if it has been set or not. Or if you see "ImportError: No module named 'nets'" error, then you have to reset your PYTHONPATH.*
   
 #### 2f. Compile Protobufs and run setup.py
 
@@ -123,6 +123,13 @@ The TensorFlow Object Detection API is now all set up to use pre-trained models 
 At the Python Shell, click File -> Open and select Object_detection_image.py and open it. Now change the image name that you want to test in this code.
 <pre><code># Name of the directory containing the object detection module we're using
 MODEL_NAME = 'inference_graph'
-IMAGE_NAME = 'test1.jpg'   # change here</code></pre>  
+IMAGE_NAME = 'test1.jpg'  # change here</code></pre>  
   
 ### 3. Gather and Label Pictures.
+
+Now that the TensorFlow Object Detection API is all set up and ready to go, we need to provide the images it will use to train a new detection classifier.  
+  
+#### 3a. Gather Pictures
+
+TensorFlow needs hundreds of images of an object to train a good detection classifier. To train a robust classifier, the training images should have random objects in the image along with the desired objects, and should have a variety of backgrounds and lighting conditions. There should be some images where the desired object is partially obscured, overlapped with something else, or only halfway in the picture.  
+  

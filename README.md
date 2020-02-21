@@ -77,3 +77,9 @@ In this project we will use the Faster-RCNN-Inception-V2 model. [Download the mo
 #### 2c. Download this repository from GitHub  
 
 Download the full repository located on this page (scroll to the top and click Clone or Download) and extract all the contents directly into the C:\tensorflow1\models\research\object_detection directory. (You can overwrite the existing "README.md" file.) This establishes a specific directory structure that will be used for the rest of the tutorial.
+  
+At this point, your \object_detection folder should look like this image:  
+![image4](./docs/image4.jpg)
+*I get this image from [How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU) on Windows 10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-install-anaconda-cuda-and-cudnn) so the test and test1 image file would not be in your \object_detection folder*  
+  
+  

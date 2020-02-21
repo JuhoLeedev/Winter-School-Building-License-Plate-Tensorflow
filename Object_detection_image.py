@@ -89,7 +89,7 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 # Load image using OpenCV and
 # expand image dimensions to have shape: [1, None, None, 3]
 # i.e. a single-column array, where each item in the column has the pixel RGB value
-image = cv2.imread("C:/Users/Juho/tensorflow1/sample/sample3.jpg")
+image = cv2.imread(PATH_TO_IMAGE)
 image_expanded = np.expand_dims(image, axis=0)
 
 # Perform the actual detection by running the model with the image as input

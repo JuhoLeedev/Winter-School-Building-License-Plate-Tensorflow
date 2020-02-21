@@ -84,9 +84,9 @@ At this point, your \object_detection folder should look like this image:
   
 This repository contains all images to train building license plate and .csv files and already trained models too. You can test my trained building license detector after step 2 is all completed by running Object_detection_image.py script. You can ignore the \doc folder and its files; they are just there to hold the images used for this readme.  
   
-If you want to train your own object detector, delete the following files (do not delete the folders):
-+All files in \object_detection\images\train and \object_detection\images\test  
-+The “test_labels.csv” and “train_labels.csv” files in \object_detection\images
-+All files in \object_detection\training
-+All files in \object_detection\inference_graph  
+If you want to train your own object detector, delete the following files (do not delete the folders):  
+*All files in \object_detection\images\train and \object_detection\images\test  
+*The “test_labels.csv” and “train_labels.csv” files in \object_detection\images
+*All files in \object_detection\training
+*All files in \object_detection\inference_graph  
   

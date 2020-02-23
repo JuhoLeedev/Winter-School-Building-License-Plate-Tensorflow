@@ -152,3 +152,4 @@ Download and unzip the file. Run the program and click 'Open Dir' to label both 
 LabelImg saves a .xml file containing the label data for each image. These .xml files will be used to generate TFRecords, which are one of the inputs to the TensorFlow trainer. Once you have labeled and saved each image, there will be one .xml file for each image in the \test and \train directories.  
   
 ### Generate Training Data
+

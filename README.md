@@ -1,6 +1,6 @@
 # Detecting Building license plate using TensorFlow Object Detection
 ## Brief Summary
-***last updated: 21/02/2020 with Tensorflow v1.15***  
+***last updated: 24/02/2020 with Tensorflow v1.15***  
   
 This repertory is a deep learning project that creates models that recognize building license plates as part of Inha University's Winter School project. This project ran on Windows, and all configuration is Windows based. Participants in this project are Lee Ju-ho and Park Ki-soo.  
   
@@ -147,3 +147,8 @@ You can also get it at GitHub.
 
 Download and unzip the file. Run the program and click 'Open Dir' to label both the test and train folders in the \object_detection\ image folder.
 
+![image5](./docs/image5.png)  
+  
+LabelImg saves a .xml file containing the label data for each image. These .xml files will be used to generate TFRecords, which are one of the inputs to the TensorFlow trainer. Once you have labeled and saved each image, there will be one .xml file for each image in the \test and \train directories.  
+  
+### Generate Training Data

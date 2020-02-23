@@ -133,3 +133,16 @@ Now that the TensorFlow Object Detection API is all set up and ready to go, we n
 
 TensorFlow needs hundreds of images of an object to train a good detection classifier. To train a robust classifier, the training images should have random objects in the image along with the desired objects, and should have a variety of backgrounds and lighting conditions. There should be some images where the desired object is partially obscured, overlapped with something else, or only halfway in the picture.  
   
+We have gathered 267 pictures of building license plate. Each picture was taken under various angles and light sources. The photos are all labeled and placed in the image folder. Larger images can take longer to train. If you want a reasonable amount of time, I recommend reducing it to around 200kb. You can use the resizer.py script in this repository to reduce the size of the images.  
+  
+After you have all the pictures you need, move 20% of them to the \object_detection\images\test directory, and 80% of them to the \object_detection\images\train directory. Make sure there are a variety of pictures in both the \test and \train directories.  
+  
+#### 3b. Label Pictures
+
+The most boring time has come in the process of creating an object detector. You should label all the pictures in the train folder and the pictures in the test folder. The labelImg program is recommended for labeling. [Here is the download link](https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1).  
+You can also get it at GitHub.  
+[LabelImg GitHub Link](https://github.com/tzutalin/labelImg)  
+  
+
+Download and unzip the file. Run the program and click 'Open Dir' to label both the test and train folders in the \object_detection\ image folder.
+

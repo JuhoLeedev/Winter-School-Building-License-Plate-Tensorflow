@@ -217,7 +217,7 @@ First, go to \object_detection\config folder and find train.py file. Copy it and
  <pre><code>python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config</code></pre>
 If everything has been set up correctly, TensorFlow will initialize the training. The initialization can take up to 30 seconds before the actual training begins. When training begins, it will look like this  
   
-![image6](./docs/image 6.jpg)  
+![image6](./docs/image6.jpg)  
   
 Each step of training reports the loss. It will start high and get lower and lower as training progresses. For my training on the Faster-RCNN-Inception-V2 model, it started at about 3.0 and quickly dropped below 0.8. I recommend allowing your model to train until the loss consistently drops below 0.05, which will take about 40,000 steps. The loss numbers will be different if a different model is used.  
   

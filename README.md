@@ -147,9 +147,35 @@ You can also get it at GitHub.
 
 Download and unzip the file. Run the program and click 'Open Dir' to label both the test and train folders in the \object_detection\ image folder.
 
-![image5](./docs/image5.png)  
+![image5](./docs/imgae5.png)  
   
 LabelImg saves a .xml file containing the label data for each image. These .xml files will be used to generate TFRecords, which are one of the inputs to the TensorFlow trainer. Once you have labeled and saved each image, there will be one .xml file for each image in the \test and \train directories.  
   
-### Generate Training Data
+### 4. Generate Training Data
+
+With the images labeled, it’s time to generate the TFRecords that serve as input data to the TensorFlow training model.  
+  
+First, the image .xml data will be used to create .csv files containing all the data for the train and test images. From the \object_detection folder, issue the following command in the Anaconda command prompt.
+<pre><code>python xml_to_csv.py</code></pre>
+This creates a train_labels.csv and test_labels.csv file in the \object_detection\images folder.  
+  
+Next, open the generate_tfrecord.py file in a text editor. Replace the label map starting at line 31 with your own label map.
+<pre><code># TO-DO replace this with label map
+def class_text_to_int(row_label):
+    if row_label == 'building_license_plate1':
+        return 1
+    elif row_label == 'building_license_plate2':
+        return 2
+    else:
+        return 0</code></pre>
+
+Change this part to match the object labels you did.  
+  
+Then, generate the TFRecord files by issuing these commands from the \object_detection folder.
+<pre><code>python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=images\train --output_path=train.record
+python generate_tfrecord.py --csv_input=images\test_labels.csv --image_dir=images\test --output_path=test.record</code></pre>
+These generate a train.record and a test.record file in \object_detection. These will be used to train the new object detection classifier.  
+  
+### 5. Create Label Map and Configure Training
+#### 5a. Label map
 

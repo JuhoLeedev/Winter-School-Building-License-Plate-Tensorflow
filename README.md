@@ -211,4 +211,8 @@ Save the file after the changes have been made. That’s it! The training job is
   
 ### 6. Run the Training
 
-First, go to \object_detection\config folder and find train.py file. Copy it and paste to \object_detection folder. We will train by this file so make sure that you have this file in you object_detection folder.
+First, go to \object_detection\config folder and find train.py file. Copy it and paste to \object_detection folder. We will train by this file so make sure that you have this file in you object_detection folder.  
+  
+ From the \object_detection directory, issue the following command to begin training
+ <pre><code>python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config</code></pre>
+If everything has been set up correctly, TensorFlow will initialize the training. The initialization can take up to 30 seconds before the actual training begins. When training begins, it will look like this

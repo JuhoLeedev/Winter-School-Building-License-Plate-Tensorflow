@@ -233,7 +233,7 @@ Now that training is complete, the last step is to generate the frozen inference
 <pre><code>python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph</code></pre>
 This creates a frozen_inference_graph.pb file in the \object_detection\inference_graph folder. The .pb file contains the object detection classifier.  
   
-### 8. Use Your Newly Trained Object Detection Classifier!
+### 8. Use Your Own Trained Object Detection Classifier!
 
 The object detection classifier is all ready to go!  
 Before running the Python scripts, you need to modify the NUM_CLASSES variable in the script to equal the number of classes you want to detect.  

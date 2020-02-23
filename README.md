@@ -140,6 +140,7 @@ After you have all the pictures you need, move 20% of them to the \object_detect
 #### 3b. Label Pictures
 
 The most boring time has come in the process of creating an object detector. You should label all the pictures in the train folder and the pictures in the test folder. The labelImg program is recommended for labeling. [Here is the download link](https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1).  
+  
 You can also get it at GitHub.  
 [LabelImg GitHub Link](https://github.com/tzutalin/labelImg)  
   
